@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@drawable/custom_bg"
+        android:id="@+id/appbarlayoutSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSearchProduct"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="5dp"
+        android:id="@+id/rcViewSearchProduct"
+        android:layout_below="@id/appbarlayoutSearchProduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="#F02"
+        android:gravity="center"
+        android:text="Không Có Dữ Liệu ^^"
+        android:id="@+id/txtNoData"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

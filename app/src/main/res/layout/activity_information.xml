@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/custom_bg"
+        app:titleTextColor="#F02"
+        app:title="Thông Tin"
+         android:padding="5dp"
+        android:id="@+id/toolbarMap"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_margin="10dp"
+            android:textColor="#F02"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="Địa Chỉ Của Tôi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableLeft="@drawable/adress"
+                android:padding="15dp"
+                android:layout_margin="10dp"
+                android:background="@color/colorWhite"
+                android:textStyle="italic"
+                android:textColor="#F02"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="Địa Chỉ : Đà Nẵng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Activity.InformationActivity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

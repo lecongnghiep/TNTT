@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Activity.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <TextView
+        android:layout_below="@+id/toolbarLogin"
+        android:layout_margin="40dp"
+        android:id="@+id/txtTieuDe"
+        android:textStyle="bold"
+        android:textColor="#F02"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mời Bạn Đăng Nhập Hệ Thống Trước Khi Mua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:textColorHint="#F02"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:hint="Nhập Tài Khoản "
+        android:id="@+id/edtTaiKhoan"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/txtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:textColorHint="#F02"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:hint="Nhập Mật Khẩu "
+        android:id="@+id/edtMatKhau"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edtTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/edtMatKhau"
+        android:textStyle="bold"
+        android:textColor="#F02"
+        android:padding="10dp"
+        android:text="Đăng Nhập"
+        android:id="@+id/btnDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/edtMatKhau"
+        android:textStyle="bold"
+        android:textColor="#F02"
+        android:padding="10dp"
+        android:text="Đăng Ký"
+        android:id="@+id/btnDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

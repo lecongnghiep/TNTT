@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="256dp"
+    android:layout_height="300dp">
+
+    <TextView
+        android:id="@+id/txtThem"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="Bạn Có Muốn Xóa ???"
+        android:textColor="#E81A20"
+        android:textSize="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:padding="20dp"
+        android:textColor="#F02"
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtThem"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Xóa"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:textColor="#FFC107"
+        android:background="@drawable/custom_button"
+        android:id="@+id/btnCancle"
+        android:text="Hủy"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/btnDelete"
+        android:layout_below="@id/txtThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

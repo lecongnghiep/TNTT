@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.InformationClientActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarClient"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_bg"
+        android:padding="5dp"
+        app:title="Điền Vào Để Mua Nè"
+        app:titleTextColor="#E11313" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/custom_boder"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Xác Nhận Thông Tin Khách Hàng"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edtNameClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nhập Tên Khách Hàng"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edtPhoneClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nhập Số Điện Thoại Khách Hàng"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edtEmailClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Nhập Email Khách Hàng" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConfirmClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:background="#59D8DA"
+                android:padding="10dp"
+                android:text="Xác Nhận"
+                android:textColor="#F02"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBackClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#59D8DA"
+                android:padding="10dp"
+                android:text="Trở Về"
+                android:textColor="#F02"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
